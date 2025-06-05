@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://santro-tech.com
+
+# Sitemaps
+Sitemap: https://santro-tech.com/sitemap.xml

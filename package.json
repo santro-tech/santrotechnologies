@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build ",
     "start": "next start",
-    "lint": "next lint",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@netlify/next": "^1.4.9",
     "animate.css": "latest",
     "aos": "latest",
     "next": "latest",

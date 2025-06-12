@@ -36,7 +36,7 @@ export default function Home() {
         url: "https://santro-tech.com",
         logo: "https://santro-tech.com/assets/LOGO.jpg",
         sameAs: [
-          "https://www.linkedin.com/company/santrotech",
+          "https://linkedin.com/company/santrotechsoftwaretechnologies",
           "https://twitter.com/santrotech"
         ]
       }),

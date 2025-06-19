@@ -20,29 +20,29 @@ const ContactUs = () => {
         <img
           src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2ZmaWNlJTIwaW1hZ2VzfGVufDB8fDB8fHww"
           alt="Office Image"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 object-cover w-full h-full"
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Hero Text */}
-        <div className="relative z-10 text-center text-white p-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in">
+        <div className="relative z-10 p-8 text-center text-white">
+          <h1 className="mb-4 text-4xl font-bold sm:text-5xl lg:text-6xl animate-fade-in">
             CONTACT US
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 animate-fade-in-up">
+          <p className="text-lg text-gray-200 sm:text-xl lg:text-2xl animate-fade-in-up">
             We're here to help. Reach out to us anytime!
           </p>
         </div>
       </div>
 
       {/* Contact Form and Information Section */}
-      <div className="bg-gray-50 py-12">
-        <div className="container mx-auto px-4">
+      <div className="py-12 bg-gray-50">
+        <div className="container px-4 mx-auto">
           {/* Grid Layout for Contact Form and Information */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-xl transform transition-transform hover:scale-105">
-              <h2 className="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+            <div className="p-8 transition-transform transform bg-white rounded-lg shadow-xl hover:scale-105">
+              <h2 className="mb-6 text-2xl font-bold text-gray-800">Send Us a Message</h2>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 {/* Name Field */}
                 <div>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                     id="name"
                     name="name"
                     placeholder="John Doe"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="block w-full px-4 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required
                   />
                 </div>
@@ -69,7 +69,7 @@ const ContactUs = () => {
                     id="email"
                     name="email"
                     placeholder="johndoe@example.com"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="block w-full px-4 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required
                   />
                 </div>
@@ -84,7 +84,7 @@ const ContactUs = () => {
                     name="message"
                     rows="5"
                     placeholder="How can we help you?"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="block w-full px-4 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required
                   ></textarea>
                 </div>
@@ -93,7 +93,7 @@ const ContactUs = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-6 py-3 text-white transition-all transform rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     Send Message
                   </button>
@@ -104,13 +104,13 @@ const ContactUs = () => {
             {/* Contact Information and Map */}
             <div className="space-y-8">
               {/* Contact Information */}
-              <div className="bg-white p-8 rounded-lg shadow-xl transform transition-transform hover:scale-105">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+              <div className="p-8 transition-transform transform bg-white rounded-lg shadow-xl hover:scale-105">
+                <h2 className="mb-6 text-2xl font-bold text-gray-800">Contact Information</h2>
                 <ul className="space-y-4 text-gray-700">
-                  <li className="flex items-center hover:text-blue-600 transition-colors">
+                  <li className="flex items-center transition-colors hover:text-blue-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 mr-2 text-blue-600"
+                      className="w-6 h-6 mr-2 text-blue-600"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -128,12 +128,12 @@ const ContactUs = () => {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    Ground Floor, Beech, E-1 Manyata Embassy Business Park, Outer Ring Road, Nagawara, Bangalore, Karnataka 560045.
+                    #62/1, New No:07, 1st Cross, 2nd Main, Ganganagar, Bangalore, Karnataka 560032.
                   </li>
-                  <li className="flex items-center hover:text-blue-600 transition-colors">
+                  <li className="flex items-center transition-colors hover:text-blue-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 mr-2 text-blue-600"
+                      className="w-6 h-6 mr-2 text-blue-600"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -147,10 +147,10 @@ const ContactUs = () => {
                     </svg>
                     info@santro-tech.com
                   </li>
-                  <li className="flex items-center hover:text-blue-600 transition-colors">
+                  <li className="flex items-center transition-colors hover:text-blue-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 mr-2 text-blue-600"
+                      className="w-6 h-6 mr-2 text-blue-600"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -168,8 +168,8 @@ const ContactUs = () => {
               </div>
 
               {/* Google Maps Embed */}
-              <div className="bg-white p-8 rounded-lg shadow-xl transform transition-transform hover:scale-105">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Our Location</h2>
+              <div className="p-8 transition-transform transform bg-white rounded-lg shadow-xl hover:scale-105">
+                <h2 className="mb-6 text-2xl font-bold text-gray-800">Our Location</h2>
                 <div className="overflow-hidden rounded-lg">
                   <iframe
                     title="Google Maps Location"
@@ -188,7 +188,7 @@ const ContactUs = () => {
 
       {/* Popup Message */}
       {showPopup && (
-        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
+        <div className="fixed px-6 py-3 text-white bg-green-500 rounded-lg shadow-lg bottom-4 right-4">
           <p>Thanks for contacting us! We appreciate your inquiry and will respond shortly.</p>
         </div>
       )}

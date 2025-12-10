@@ -54,7 +54,7 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-bold">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>📧 Email: info@santro-tech.com</li>
-              <li>📞 Phone: +91 6304403019</li>
+              <li>📞 Phone: +91 9000497500</li>
               <li>🏠 Address:  #62/1, New No:07, 1st Cross, 2nd Main, Ganganagar, Bangalore, Karnataka 560032.</li>
             </ul>
           </div>

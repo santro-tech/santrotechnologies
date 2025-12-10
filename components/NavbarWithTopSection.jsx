@@ -10,7 +10,7 @@ const TopSection = () => (
     <div className="flex flex-wrap items-center justify-center gap-4 px-4 mx-auto max-w-7xl sm:justify-evenly">
       <span>📍Bengaluru</span>
       <span> ✉ info@santro-tech.com</span>
-      <span> 📞 Phone: +91 6304403019</span>
+      <span> 📞 Phone: +91 9000497500</span>
     </div>
   </div>
 );
